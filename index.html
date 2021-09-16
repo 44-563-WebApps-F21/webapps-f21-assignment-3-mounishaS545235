@@ -43,5 +43,61 @@
         </ul>
 
         <a href="C:\Users\S545235\OneDrive - nwmissouri.edu\Desktop\webapps-repos\webapps-f21-assignment-3-mounishaS545235\aboutme.html">Click here for About Me</a>
+
+        <hr/>
+        <h1>Food/Drinks that I would recommend to others</h1>
+        <table border="solid" overflow="auto">
+            <tr>
+                <th>Food/Drinks</th>
+                <th>Location</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>Hot Nutella lava cake</td>
+                <td>Madhapur</td>
+                <td>$15</td>
+            </tr>
+            <tr>
+                <td>Drumstick Donne Biryani</td>
+                <td>Kondapur</td>
+                <td>$21</td>
+            </tr>
+            <tr>
+                <td>WoodFried Poasted chicken Pizza</td>
+                <td>Jubliee hills</td>
+                <td>$20</td>
+            </tr>
+            <tr>
+                <td>Blueberry cheese Shake</td>
+                <td>Nagole</td>
+                <td>$12</td>
+            </tr>
+        </table>
+        
+        <hr/>
+        <h1>String Processing Algorithm</h1>
+        <blockquote cite="https://en.wikipedia.org/wiki/String_(computer_science)">
+            In computer programming, a string is traditionally a sequence of characters, either as a literal constant or as some kind of 
+            variable. The latter may allow its elements to be mutated and the length changed, or it may be fixed (after creation). 
+            A string is generally considered as a data type and is often implemented as an array data structure of bytes (or words) that stores 
+            a sequence of elements, typically characters, using some character encoding. String may also denote more general arrays or 
+            other sequence (or list) data types and structures.
+        </blockquote>
+        <a href="https://en.wikipedia.org/wiki/String_(computer_science)">Source link for Definition</a>
+        <br/>
+        <pre>
+            long long compute_hash(string const& s) {
+                const int p = 31;
+                const int m = 1e9 + 9;
+                long long hash_value = 0;
+                long long p_pow = 1;
+                for (char c : s) {
+                    hash_value = (hash_value + (c - 'a' + 1) * p_pow) % m;
+                    p_pow = (p_pow * p) % m;
+                }
+                return hash_value;
+            }
+        </pre>
+        <a href="https://cp-algorithms.com/string/string-hashing.html">Source link for Code</a>
     </body>
 </html>
